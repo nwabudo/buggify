@@ -33,11 +33,11 @@ WHERE NOT EXISTS (
         SELECT email FROM tbl_users WHERE email = 'e.nwabudo@ratepay.com'
     );
 
-insert into user_roles (user_id, role_id) values (1, 1);
-insert into user_roles (user_id, role_id) values (1, 2);
-insert into user_roles (user_id, role_id) values (1, 3);
-insert into user_roles (user_id, role_id) values (2, 1);
-insert into user_roles (user_id, role_id) values (2, 2);
+insert into tbl_user_roles (user_id, role_id) values (1, 1);
+insert into tbl_user_roles (user_id, role_id) values (1, 2);
+insert into tbl_user_roles (user_id, role_id) values (1, 3);
+insert into tbl_user_roles (user_id, role_id) values (2, 1);
+insert into tbl_user_roles (user_id, role_id) values (2, 2);
 
 --Insert into bug table
 insert into TBL_BUGS

@@ -40,9 +40,6 @@ class BugServiceImplTest extends BaseTest {
 
         Mockito.when(bugRepository.findAllBugs(any())).thenReturn(bugs);
         Mockito.when(bugRepository.findBugsByStatus(any(), any())).thenReturn(bugs);
-
-        //doReturn(bugs).when(bugRepository).findBugsByStatus(any(), any());
-        //doReturn(bugs).when(bugRepository).findAllBugs(any());
     }
 
     @Test
