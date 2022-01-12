@@ -78,11 +78,11 @@ public class LoggingAspect {
     }
 
     @Around("serviceMethod()")
-    public Object aroundLoginAdvance(ProceedingJoinPoint proceedingJoinPoint) throws Throwable{
+    public Object aroundLoginAdvance(ProceedingJoinPoint joinPoint) throws Throwable{
         // Here is a code that gets executed before target method
         log.info("before-around Service Method ran");
 
-        Object result = proceedingJoinPoint.proceed();
+        Object result = joinPoint.proceed();
 
         // Here is a code that gets executed after the target method
         log.info("after-around Service Method ran");
